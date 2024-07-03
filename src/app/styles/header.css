@@ -1,0 +1,8 @@
+header {
+    background-color: #FFEAF1;
+    color: #009243;
+}
+
+.header-border {
+    border-bottom: 3px solid #009243;
+}

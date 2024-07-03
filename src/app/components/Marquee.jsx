@@ -2,18 +2,17 @@ import React from "react";
 
 const Marquee = () => {
   return (
-    <div className="marquee-container relative flex w-full rotate-12">
-      <div class="py-12 animate-marquee whitespace-nowra">
-        <span className="text-4xl text-white mx-4">frontend developer //</span>
-        <span className="text-4xl text-white mx-4">scrum master //</span>
-        <span className="text-4xl text-white mx-4">designer</span>
-      </div>
-
-      <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-        <span className="text-4xl text-white mx-4">frontend developer //</span>
-        <span className="text-4xl text-white mx-4">scrum master //</span>
-        <span className="text-4xl text-white mx-4">designer</span>
-      </div>
+    <div className="marquee-container relative flex w-screen -z-10">
+      {[...Array(10)].map((u, i) => (
+        <div key={i}>
+          <div className="top-0 py-12 animate-marquee whitespace-nowrap w-full bg-black">
+            <span className="text-4xl text-white mx-4">🌻 👋 //</span>
+            <span className="text-4xl text-white mx-4">frontend developer //</span>
+            <span className="text-4xl text-white mx-4">scrum master //</span>
+            <span className="text-4xl text-white mx-4">designer //</span>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
