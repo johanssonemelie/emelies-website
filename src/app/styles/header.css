@@ -6,3 +6,11 @@ header {
 .header-border {
     border-bottom: 3px solid #009243;
 }
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #009243;
+    border-radius: 50%;
+    display: inline-block;
+  }
